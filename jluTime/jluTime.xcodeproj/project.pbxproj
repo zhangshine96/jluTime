@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B037F2F1F5A6B4D00336C80 /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B037F2E1F5A6B4D00336C80 /* MyView.xib */; };
 		5B3500BE1F5844A90040C82D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3500BD1F5844A90040C82D /* AppDelegate.swift */; };
 		5B3500C01F5844A90040C82D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3500BF1F5844A90040C82D /* ViewController.swift */; };
 		5B3500C31F5844A90040C82D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3500C11F5844A90040C82D /* Main.storyboard */; };
@@ -17,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5B037F2E1F5A6B4D00336C80 /* MyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
 		5B3500BA1F5844A90040C82D /* jluTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jluTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B3500BD1F5844A90040C82D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B3500BF1F5844A90040C82D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				5B3500C61F5844A90040C82D /* LaunchScreen.storyboard */,
 				5B3500C91F5844A90040C82D /* Info.plist */,
 				5B6B7E5B1F5945DC007F66DB /* HomeTabbarViewController.swift */,
-				5B037F2E1F5A6B4D00336C80 /* MyView.xib */,
 			);
 			path = jluTime;
 			sourceTree = "<group>";
@@ -130,7 +127,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B037F2F1F5A6B4D00336C80 /* MyView.xib in Resources */,
 				5B3500C81F5844A90040C82D /* LaunchScreen.storyboard in Resources */,
 				5B3500C51F5844A90040C82D /* Assets.xcassets in Resources */,
 				5B3500C31F5844A90040C82D /* Main.storyboard in Resources */,
