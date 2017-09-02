@@ -304,6 +304,7 @@
 				5B3500CE1F5844A90040C82D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
