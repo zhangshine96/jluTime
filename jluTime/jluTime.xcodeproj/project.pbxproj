@@ -12,6 +12,7 @@
 		5B3500C31F5844A90040C82D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3500C11F5844A90040C82D /* Main.storyboard */; };
 		5B3500C51F5844A90040C82D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B3500C41F5844A90040C82D /* Assets.xcassets */; };
 		5B3500C81F5844A90040C82D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3500C61F5844A90040C82D /* LaunchScreen.storyboard */; };
+		5B5B86861F5AA775007902F9 /* activityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5B86851F5AA775007902F9 /* activityTableViewController.swift */; };
 		5B6B7E5C1F5945DC007F66DB /* HomeTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6B7E5B1F5945DC007F66DB /* HomeTabbarViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		5B3500C41F5844A90040C82D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B3500C71F5844A90040C82D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B3500C91F5844A90040C82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5B86851F5AA775007902F9 /* activityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = activityTableViewController.swift; sourceTree = "<group>"; };
 		5B6B7E5B1F5945DC007F66DB /* HomeTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabbarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 				5B3500C61F5844A90040C82D /* LaunchScreen.storyboard */,
 				5B3500C91F5844A90040C82D /* Info.plist */,
 				5B6B7E5B1F5945DC007F66DB /* HomeTabbarViewController.swift */,
+				5B5B86851F5AA775007902F9 /* activityTableViewController.swift */,
 			);
 			path = jluTime;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B5B86861F5AA775007902F9 /* activityTableViewController.swift in Sources */,
 				5B3500C01F5844A90040C82D /* ViewController.swift in Sources */,
 				5B6B7E5C1F5945DC007F66DB /* HomeTabbarViewController.swift in Sources */,
 				5B3500BE1F5844A90040C82D /* AppDelegate.swift in Sources */,
@@ -156,6 +160,7 @@
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		5B3500C61F5844A90040C82D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
