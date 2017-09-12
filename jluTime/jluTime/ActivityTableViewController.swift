@@ -10,22 +10,22 @@ import UIKit
 class Requst{
     
 }
-class Activity:NSObject{
-    private var person : Person     //接受任务的人
-    private var glod : Int          //此任务奖励的金币
-    private var exp : Int           //此任务奖励的经验
-    private var location : [Int]   //此任务的接受地点（经纬度）
-    private var requst : Requst     //此任务的完成要求
-    //需要初始化 人物 金币 经验 领取任务地点 任务完成的要求
-    init(p:Person , gold : Int = 0 , exp : Int = 0 , location : [Int] = [0,0] , requst : Requst = Requst()) {
-        person = p
-        self.glod = gold
-        self.exp = exp
-        self.location = location
-        self.requst = requst
-    }
-    
-}
+//class Activity:NSObject{
+//    private var person : Person     //接受任务的人
+//    private var glod : Int          //此任务奖励的金币
+//    private var exp : Int           //此任务奖励的经验
+//    private var location : [Int]   //此任务的接受地点（经纬度）
+//    private var requst : Requst     //此任务的完成要求
+//    //需要初始化 人物 金币 经验 领取任务地点 任务完成的要求
+//    init(p:Person , gold : Int = 0 , exp : Int = 0 , location : [Int] = [0,0] , requst : Requst = Requst()) {
+//        person = p
+//        self.glod = gold
+//        self.exp = exp
+//        self.location = location
+//        self.requst = requst
+//    }
+//
+//}
 class actUIViewCellController : UITableViewCell{
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier);

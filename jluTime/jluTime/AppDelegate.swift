@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import LeanCloud
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -16,6 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        LeanCloud.initialize(applicationID: "zUf3O07IrGG5UJFXv2KlrKJg-gzGzoHsz", applicationKey: "LQ8gxJD864aSvL8875lHT9QM")
+        let post = LCObject(className: "TestObject")
+        
+        post.set("words", value: "Hello World!")
+        
+        post.save()
         return true
     }
 
