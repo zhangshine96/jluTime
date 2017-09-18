@@ -15,6 +15,8 @@
 		5B3500C81F5844A90040C82D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3500C61F5844A90040C82D /* LaunchScreen.storyboard */; };
 		5B5E50511F6FA955003334B2 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E50501F6FA955003334B2 /* DetailTableViewController.swift */; };
 		5B5E50531F6FCB23003334B2 /* MyMissionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E50521F6FCB23003334B2 /* MyMissionTableViewController.swift */; };
+		5B5E50551F6FF464003334B2 /* DataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E50541F6FF464003334B2 /* DataTableViewController.swift */; };
+		5BB4DA8A1F6FFA3E00ADA8C4 /* CountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB4DA891F6FFA3E00ADA8C4 /* CountTableViewController.swift */; };
 		5BB75B941F636E2C008A533A /* PersonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB75B931F636E2C008A533A /* PersonClass.swift */; };
 		5BB75B961F637148008A533A /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB75B951F637148008A533A /* ActivityTableViewController.swift */; };
 		5BBABD6F1F61010A00FBAEB4 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBABD6E1F61010A00FBAEB4 /* HomeTableViewController.swift */; };
@@ -31,6 +33,8 @@
 		5B3500C91F5844A90040C82D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B5E50501F6FA955003334B2 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		5B5E50521F6FCB23003334B2 /* MyMissionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMissionTableViewController.swift; sourceTree = "<group>"; };
+		5B5E50541F6FF464003334B2 /* DataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableViewController.swift; sourceTree = "<group>"; };
+		5BB4DA891F6FFA3E00ADA8C4 /* CountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountTableViewController.swift; sourceTree = "<group>"; };
 		5BB75B931F636E2C008A533A /* PersonClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonClass.swift; sourceTree = "<group>"; };
 		5BB75B951F637148008A533A /* ActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
 		5BBABD6E1F61010A00FBAEB4 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeTableViewController.swift; path = ../HomeTableViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 				5B2371241F6E070400CB5667 /* StoreTableViewController.swift */,
 				5B5E50501F6FA955003334B2 /* DetailTableViewController.swift */,
 				5B5E50521F6FCB23003334B2 /* MyMissionTableViewController.swift */,
+				5B5E50541F6FF464003334B2 /* DataTableViewController.swift */,
+				5BB4DA891F6FFA3E00ADA8C4 /* CountTableViewController.swift */,
 				5B3500C11F5844A90040C82D /* Main.storyboard */,
 				5BB75B931F636E2C008A533A /* PersonClass.swift */,
 				5B3500C41F5844A90040C82D /* Assets.xcassets */,
@@ -156,6 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5E50511F6FA955003334B2 /* DetailTableViewController.swift in Sources */,
+				5BB4DA8A1F6FFA3E00ADA8C4 /* CountTableViewController.swift in Sources */,
+				5B5E50551F6FF464003334B2 /* DataTableViewController.swift in Sources */,
 				5BBABD6F1F61010A00FBAEB4 /* HomeTableViewController.swift in Sources */,
 				5BB75B961F637148008A533A /* ActivityTableViewController.swift in Sources */,
 				5BB75B941F636E2C008A533A /* PersonClass.swift in Sources */,

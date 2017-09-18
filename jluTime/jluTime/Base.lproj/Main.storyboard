@@ -14,7 +14,7 @@
         <!--我的-->
         <scene sceneID="mXD-fG-XnG">
             <objects>
-                <tableViewController title="我的" id="xK2-pE-Ffb" sceneMemberID="viewController">
+                <tableViewController title="我的" id="xK2-pE-Ffb" customClass="CountTableViewController" customModule="jluTime" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="c49-tE-W1V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -381,7 +381,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="fVc-bC-nNZ" kind="showDetail" id="nha-rr-xX5"/>
+                                            <segue destination="NcD-8J-mFX" kind="show" id="VpJ-4W-HrH"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="GOE-TH-flv">
@@ -462,15 +462,18 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="我的" id="FOE-Xg-0kK"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="photo" destination="gk8-lh-NUj" id="W2h-d6-Ic4"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oyE-al-daF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1335" y="126"/>
+            <point key="canvasLocation" x="1333.5999999999999" y="125.4872563718141"/>
         </scene>
         <!--数据统计-->
         <scene sceneID="SQo-0s-T8l">
             <objects>
-                <tableViewController id="nYV-wM-Xk4" sceneMemberID="viewController">
+                <tableViewController id="nYV-wM-Xk4" customClass="DataTableViewController" customModule="jluTime" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="KSd-3T-vDE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1206,32 +1209,34 @@
             </objects>
             <point key="canvasLocation" x="2943" y="126"/>
         </scene>
-        <!--我的活动-->
-        <scene sceneID="rnS-4x-80q">
+        <!--我的任务-->
+        <scene sceneID="81p-PS-Fjt">
             <objects>
-                <tableViewController title="我的活动" id="fVc-bC-nNZ" customClass="MyMissionTableViewController" customModule="jluTime" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="IHJ-uX-tEw">
+                <tableViewController title="我的任务" hidesBottomBarWhenPushed="YES" id="NcD-8J-mFX" customClass="MyMissionTableViewController" customModule="jluTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8UR-5L-nYu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <scrollView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DOo-DS-ITq">
+                        <color key="separatorColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <scrollView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="5QG-rS-C3A">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="602"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </scrollView>
                         <connections>
-                            <outlet property="dataSource" destination="fVc-bC-nNZ" id="T60-oJ-Fka"/>
-                            <outlet property="delegate" destination="fVc-bC-nNZ" id="y0j-NT-DZ2"/>
+                            <outlet property="dataSource" destination="NcD-8J-mFX" id="BK8-Gl-RF3"/>
+                            <outlet property="delegate" destination="NcD-8J-mFX" id="nAR-eH-lhr"/>
                         </connections>
                     </tableView>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="scrollview" destination="DOo-DS-ITq" id="Ail-dq-Fnf"/>
-                        <segue destination="xK2-pE-Ffb" kind="show" id="2nY-JS-AyY"/>
+                        <outlet property="scrollview" destination="5QG-rS-C3A" id="7Gx-3L-VQf"/>
                     </connections>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="19k-Zy-TCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X99-sj-e53" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1351.2" y="888.30584707646187"/>
+            <point key="canvasLocation" x="1333.5999999999999" y="887.40629685157433"/>
         </scene>
         <!--我的回忆-->
         <scene sceneID="GG0-3i-aNF">
@@ -1896,7 +1901,4 @@
         <image name="背景" width="1280" height="800"/>
         <image name="金币" width="32" height="32"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="2nY-JS-AyY"/>
-    </inferredMetricsTieBreakers>
 </document>

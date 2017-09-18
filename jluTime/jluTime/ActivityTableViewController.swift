@@ -68,7 +68,8 @@ class actUIViewCellController : UITableViewCell{
         gold_number = UILabel(frame: CGRect(x: 331, y: 114+(No*190), width:25, height: 21))
         //奖励任务类型的数量
         type_number = UILabel(frame: CGRect(x: 331, y: 137+(No*190), width:25, height: 32))
-        line = UILabel(frame: CGRect(x:10,y:180+(No*190),width:355,height:2))
+        
+    
         go_detail = UIButton(type: .custom)
         go_detail.frame = CGRect(x:300,y:58+(No*190),width:32,height:32)
     }
