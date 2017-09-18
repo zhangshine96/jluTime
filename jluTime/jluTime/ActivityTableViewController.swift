@@ -27,24 +27,7 @@ class Activity:NSObject{
     
 }
 class actUIViewCellController : UITableViewCell{
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier);
-        //调用单元格初始化方法
-    }
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:)has not been implemented")
-    }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
     //详细信息
     var detail: UILabel!
     //领取任务地点
@@ -65,6 +48,7 @@ class actUIViewCellController : UITableViewCell{
     var gold_number: UILabel!
     //奖励任务类型的数量
     var type_number: UILabel!
+    var line : UILabel!
     func setLocation(No : Int = 0){
         //详细信息
         detail = UILabel(frame: CGRect(x: 0, y: 65+(No*190), width:347, height: 129))
@@ -76,8 +60,6 @@ class actUIViewCellController : UITableViewCell{
         title1 = UILabel(frame: CGRect(x: 28, y: 8+(No*190), width:340, height: 32))
         //任务类型
          type2 = UIImageView(frame: CGRect(x: 305, y: 140+(No*190), width: 23, height: 18))
-        //前往下个界面
-         //go_detail: UIButton!
         //金币图标
         gold = UIImageView(frame: CGRect(x: 305, y: 114+(No*190), width: 23, height: 18))
         //整个cell块
@@ -86,6 +68,9 @@ class actUIViewCellController : UITableViewCell{
         gold_number = UILabel(frame: CGRect(x: 331, y: 114+(No*190), width:25, height: 21))
         //奖励任务类型的数量
         type_number = UILabel(frame: CGRect(x: 331, y: 137+(No*190), width:25, height: 32))
+        line = UILabel(frame: CGRect(x:10,y:180+(No*190),width:355,height:2))
+        go_detail = UIButton(type: .custom)
+        go_detail.frame = CGRect(x:300,y:58+(No*190),width:32,height:32)
     }
     func setACell() -> UIView{
         detail.text = "活动详情"
@@ -96,6 +81,7 @@ class actUIViewCellController : UITableViewCell{
         type_number.text = "10"
         gold.image = #imageLiteral(resourceName: "金币")
         type2.image = #imageLiteral(resourceName: "劳动节")
+        line.backgroundColor = UIColor.gray
         Cell.addSubview(location)
         Cell.addSubview(gold)
         Cell.addSubview(gold_number)
@@ -104,28 +90,51 @@ class actUIViewCellController : UITableViewCell{
         Cell.addSubview(detail)
         Cell.addSubview(title1)
         Cell.addSubview(type)
+        Cell.addSubview(line)
+        //Cell.addSubview(go_detail)
         return Cell
         
     }
-    
 }
 class ActivityTableViewController: UITableViewController {
     @IBOutlet weak var scrollview: UIScrollView!
-
+    var a : [actUIViewCellController] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         var No = 4
-        
         //添加cell，活动内容
         for i in 0..<No {
-            var a1 = actUIViewCellController()
-            a1.setLocation(No: i)
-            scrollview.addSubview(a1.setACell())
+            a.append(actUIViewCellController())
+            a[i].setLocation(No: i)
+            scrollview.addSubview(a[i].setACell())
             
         }
-        scrollview.contentSize = CGSize(width: 375, height: 50+No*190)
-        //self.view.addSubview(scrollview)
+        scrollview.contentSize = CGSize(width: 375, height: No*190+50)
+        scrollview.delegate = self
+        
         
 
+    }
+    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell!{
+        
+        let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "cell")
+        
+        return cell
+    }
+    // UITableViewDelegate 方法，处理列表项的选中事件
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //self.tableView!.deselectRow(at: indexPath, animated: true)
+        var x = indexPath.row/191
+        self.performSegue(withIdentifier: "ShowDetailView", sender: nil)
+        
+        
+    }
+    
+    //在这个方法中给新页面传递参数
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDetailView"{
+            let controller = segue.destination as! DetailTableViewController
+            //controller.name.text = sender as? String
+        }
     }
    }
