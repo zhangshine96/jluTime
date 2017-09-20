@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "42CABB3D27526E2DB5F2F2365F2DEBEA2D87B1A1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "42CABB3D27526E2DB5F2F2365F2DEBEA2D87B1A1" : 9223372036854775807,
+    "E55CF83B90BF31E6ED4660B04513F3BFED9CBB8E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C53EFAE5-B71D-4800-9415-3AB03FAA87D2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "42CABB3D27526E2DB5F2F2365F2DEBEA2D87B1A1" : "jluTime:9.18\/",
+    "E55CF83B90BF31E6ED4660B04513F3BFED9CBB8E" : "jluTime:9.18\/leancloud-objc-sdk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "jluTime",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "jluTime\/jluTime.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zhangshine96\/jluTime.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "42CABB3D27526E2DB5F2F2365F2DEBEA2D87B1A1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/leancloud\/objc-sdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E55CF83B90BF31E6ED4660B04513F3BFED9CBB8E"
+    }
+  ]
+}
